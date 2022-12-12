@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/pullToRefreshImgList"
+    android:layout_height="match_parent"
+    tools:context=".ImageListActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#F3F3F3"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/listName"
+        android:textColor="#131313"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="40sp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/imageListRecycler"
+        android:layout_below="@id/listName"
+        android:layout_height="match_parent"/>
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

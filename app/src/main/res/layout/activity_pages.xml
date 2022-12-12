@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PagesActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/fragmentReplace"
+        android:layout_above="@id/bottomNavBar"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/bottomNavBar"
+        android:layout_alignParentBottom="true"
+        android:background="#EFEFEF">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/frame_home"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:id="@+id/nav_home"
+                android:layout_gravity="center"
+                android:background="@drawable/nav_home"
+                android:layout_height="26dp"/>
+
+        </FrameLayout>
+
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/frame_categories"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:id="@+id/nav_category"
+                android:layout_gravity="center"
+                android:background="@drawable/nav_category"
+                android:layout_height="26dp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/frame_random"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:id="@+id/nav_random"
+                android:layout_gravity="center"
+                android:background="@drawable/nav_random"
+                android:layout_height="30dp"/>
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/frame_settings"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:id="@+id/nav_settings"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_setting"
+                android:layout_height="30dp"/>
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/frame_add"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:id="@+id/nav_add"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_add"
+                android:layout_height="28dp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/frame_replace"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:id="@+id/nav_replace"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_replace"
+                android:layout_height="28dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

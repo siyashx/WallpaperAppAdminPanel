@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pullToRefreshRandom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.RandomFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#e2e2e2"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/randomTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/random"
+        android:textColor="#131313"
+        android:textSize="33sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/randomRecycler"
+        android:layout_below="@id/randomTxt"
+        android:layout_height="match_parent"/>
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

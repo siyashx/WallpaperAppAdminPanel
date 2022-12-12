@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#e2e2e2"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ChangeFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="30dp">
+
+        <ImageView
+            android:id="@+id/addOrChangeImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/select_image" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/categorySize"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#222222"
+        android:layout_below="@id/cardView1"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Category size: 612x270"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/catalogSize"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#222222"
+        android:layout_below="@id/categorySize"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Catalog size: 360x180"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:id="@+id/categoryRadioBtn"
+        android:layout_below="@id/catalogSize"
+        android:checked="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/categoryRadioBtnTxt"
+        android:layout_below="@id/catalogSize"
+        android:textSize="14sp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/categoryRadioBtn"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Category"
+        android:textColor="#222222" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:id="@+id/catalogRadioBtn"
+        android:layout_below="@id/catalogSize"
+        android:layout_toStartOf="@id/catalogRadioBtnTxt"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/catalogRadioBtnTxt"
+        android:layout_below="@id/catalogSize"
+        android:layout_alignParentEnd="true"
+        android:textSize="14sp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Catalog"
+        android:textColor="#222222" />
+
+    <EditText
+        android:id="@+id/selectAvailableCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/catalogRadioBtnTxt"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_text_back"
+        android:fontFamily="@font/nunito_bold"
+        android:hint="@string/select_category"
+        android:padding="10dp"
+        android:inputType="none"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:textColorHint="@color/cardview_shadow_start_color" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/changeOrAddBtn"
+        android:background="@drawable/edit_text_back"
+        android:layout_width="match_parent"
+        android:backgroundTint="#FF6600"
+        android:layout_below="@id/selectAvailableCategory"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/nunito_bold"
+        android:padding="5dp"
+        android:text="@string/change" />
+
+</RelativeLayout>

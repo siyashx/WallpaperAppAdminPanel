@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/pullToRefreshCategories"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CategoriesFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#e2e2e2"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/categoriesTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/categories"
+        android:textColor="#131313"
+        android:textSize="35sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/categoryRecycler"
+        android:layout_below="@id/categoriesTxt"
+        android:layout_height="match_parent"/>
+
+
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

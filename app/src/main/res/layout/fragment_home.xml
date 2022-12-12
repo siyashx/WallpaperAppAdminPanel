@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#e2e2e2"
+    android:id="@+id/pullToRefreshHome"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/catalogsRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            tools:listitem="@layout/catalog_item" />
+
+
+        <TextView
+            android:id="@+id/recentUploadedTxt"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/catalogsRecycler"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/recent_uploaded"
+            android:textColor="#131313"
+            android:textSize="20sp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recentUploadedRecycler"
+                android:layout_width="match_parent"
+                android:layout_below="@id/recentUploadedTxt"
+                android:layout_height="wrap_content" />
+
+    </RelativeLayout>

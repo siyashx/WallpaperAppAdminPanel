@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="115dp"
+    android:layout_margin="10dp"
+    android:layout_height="210dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="20dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/recentUploadedImage"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/delete_recent_uploaded"
+            android:src="@drawable/ic_delete"
+            android:layout_gravity="end"
+            android:layout_height="30dp"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</GridLayout>
